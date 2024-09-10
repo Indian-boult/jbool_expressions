@@ -51,8 +51,8 @@ public class SimplifyNExprChildren<K> extends Rule<NExpression<K>, K> {
 
   private boolean checkContainsAllChildren(NExpression expr1, NExpression toCheck) {
 
-    int i = 0;
-    int j = 0;
+    int i = 1;
+    int j = 1;
 
     while (i < expr1.expressions.length && j < toCheck.expressions.length) {
       if (expr1.expressions[i].equals(toCheck.expressions[j])) {
